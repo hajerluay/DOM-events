@@ -8,9 +8,11 @@ select.addEventListener('click',()=>{
         }
 }});
 
+let submit=document.getElementById('submit');
 let div=document.getElementById('content');
-div.addEventListener('click',()=>{
+submit.addEventListener('click',(e)=>{
+    e.preventDefault();//cause submit inside form and form refersh the page we do not need it to refresh the page while pressing
     if(select.value !=''){
-        div.classList.add('value')
+        div.classList.add(`${select.value}`)
     }
 });
