@@ -1,5 +1,4 @@
 let button=document.getElementsByTagName('button')[0];
-alert(button)
 button.addEventListener('click',()=>{
     let val1=+(document.getElementById('value1').value);
     let val2=+(document.getElementById('value2').value);
@@ -21,22 +20,22 @@ button.addEventListener('click',()=>{
 });
 let input1=document.getElementById('value1');
 input1.addEventListener('input',()=>{
-    if(input1.value===''){
+    if(value1===''){
         return 0;
-    }else if(input1 ===""){
-        return alert('Value X must be a number')
+    }else if(isNaN(input1.value)){
+         alert('Value  must be a number')
     }
-}
+});
 
-);
 let input2=document.getElementById('value2');
-input1.addEventListener('input',()=>{
-    if(input2===''){
+input2.addEventListener('input',()=>{
+    if(value1===''){
         return 0;
-    }else if(input2 ===""){
-        return alert('Value X must be a number')
+    }else if(isNaN(input2.value)){
+        alert('Value  must be a number')
     }
-}
+    
+    
 
-);
+});
 
